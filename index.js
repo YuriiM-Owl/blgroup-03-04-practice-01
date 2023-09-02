@@ -18,7 +18,6 @@ if (userAnswerToLowerCase === "ecmascript") {
 }
  */
 
-
 /**
 
 Напишіть програму, яка отримає від користувача
@@ -28,11 +27,23 @@ if (userAnswerToLowerCase === "ecmascript") {
  70 === 01:10
  */
 
- /* ------------------- Task-02------------------ */
+/* ------------------- Task-02------------------ */
 
 /*  const userUnswer = Number(prompt('Введіть число'));
  const hours = String(Math.floor(userUnswer / 60)).padStart(2,0);
  const minutes = String(userUnswer % 60).padStart(2,0);
  console.log(`${hours}:${minutes}`); */
 
- /* ------------------- Task-03------------------ */
+/* ------------------- Task-03------------------ */
+// // /**
+// //  *? Напишіть цикл, який виводить у консоль
+// //  *? всі парні числа  від max до min  за спаданням
+// //  */
+
+// const max = 50;
+// const min = 23;
+// for (let i = max; i >= min; i -= 1) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
