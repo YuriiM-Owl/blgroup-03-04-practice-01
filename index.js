@@ -86,4 +86,26 @@ alert(`Загальна сума введених чисел дорівнює ${
     setNumber = prompt('введіть, всеж таки, потрібне число')
  }; */
 
- /* ------------------- Task-06------------------ */
+/* ------------------- Task-06------------------ */
+/**
+ *? Записати масив, const arr = ['BEST', 'the', 'foo', 'is', 'JS' ]
+ *? розвернути масив,
+ *? вирізати foo,
+ *? перевести його в рядок розділений пробілами
+ *? Очікуваний результат "JS is the BEST"
+ */
+
+/* массив arr не має мутуватися */
+
+const arr = ["BEST", "the", "foo", "is", "JS"];
+const arr2 = arr.slice();
+arr2.reverse();
+console.log(arr2);
+arr2.splice(arr2.indexOf("foo"), 1);
+const string = arr2.join(" ");
+console.log(string);
+
+arr.slice(0, arr.indexOf("foo"))
+    .concat(arr.slice(arr.indexOf("foo") + 1))
+    .reverse()
+    .join(" ");
