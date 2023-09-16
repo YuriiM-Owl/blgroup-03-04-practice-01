@@ -140,3 +140,22 @@ alert(`Загальна сума введених чисел дорівнює ${
 // }
 
 /*? ------------------- Task-02-02 ------------------ */
+
+
+/* Напишіть функцію, яка приймає об'єкт і рахує загальну суму зарплат працівників. */
+
+const someObj = {
+  worker1: 360,
+  worker2: 750,
+  worker3: 240,
+};
+
+const totalSum = (obj) => {
+    const values = Object.values(obj);
+   return values.reduce((acc, element) => {
+    console.log(acc)
+       return acc += element;
+   }, 0);
+}
+
+console.log(totalSum(someObj));
