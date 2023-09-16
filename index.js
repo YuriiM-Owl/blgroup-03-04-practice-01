@@ -97,15 +97,46 @@ alert(`Загальна сума введених чисел дорівнює ${
 
 /* массив arr не має мутуватися */
 
-const arr = ["BEST", "the", "foo", "is", "JS"];
-const arr2 = arr.slice();
-arr2.reverse();
-console.log(arr2);
-arr2.splice(arr2.indexOf("foo"), 1);
-const string = arr2.join(" ");
-console.log(string);
+// const arr = ["BEST", "the", "foo", "is", "JS"];
+// const arr2 = arr.slice();
+// arr2.reverse();
+// console.log(arr2);
+// arr2.splice(arr2.indexOf("foo"), 1);
+// const string = arr2.join(" ");
+// console.log(string);
 
-arr.slice(0, arr.indexOf("foo"))
-    .concat(arr.slice(arr.indexOf("foo") + 1))
-    .reverse()
-    .join(" ");
+// arr.slice(0, arr.indexOf("foo"))
+//     .concat(arr.slice(arr.indexOf("foo") + 1))
+//     .reverse()
+//     .join(" ");
+
+/*? ------------------- Task-02-01 ------------------ */
+
+/**
+ *? Напиши скрипт для об'єкта user,
+ *? послідовно:
+ *? 1 додати поле mood зі значенням 'happy'
+ *? 2 замінить hobby на 'skydiving'
+ *? 3 замінить значення premium на false
+ *? 4 виводить вміст об'єкта users у форматі
+ *? ключ: значення використовуючи Object.keys() і for...of
+ */
+
+// const user = {
+//     name: "John",
+//     age: 20,
+//     hobby: "tennis",
+//     premium: true,
+// };
+
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// const userKeys = Object.keys(user);
+
+// for (const userKey of userKeys) {
+//     console.log(`${userKey}: ${user[userKey]}`);
+// }
+
+/*? ------------------- Task-02-02 ------------------ */
