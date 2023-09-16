@@ -188,3 +188,29 @@ console.log(totalSum(someObj)); */
   console.log(calcTotalPrice(stones, "цеглина")) */
 
   /*? ------------------- Task-02-04 ------------------ */
+
+  ///**
+  // *? Напишіть функцію, яка приймає массив об'єктів і повертає новий массив
+  // *? Зробіть знижку 20 % на всі фрукти у масиві
+  // *? Надайте ід для кожного продукту
+  // */
+  
+//   const fruits = [
+//     { name: "apple", price: 200 },
+//     { name: "orange", price: 300 },
+//     { name: "grapes", price: 750 },
+//   ];
+
+//   function updateFruit(arr) {
+//     return arr.map((fruit, index) => {
+//         return {
+//             ...fruit,
+//             price: fruit.price * 0.8,
+//             id: index + 1,
+//         }
+
+//     })
+//   }
+//   console.log(updateFruit(fruits));
+
+  /* ------------------- Task-02-04 ------------------ */
