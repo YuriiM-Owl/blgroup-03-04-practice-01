@@ -144,7 +144,7 @@ alert(`Загальна сума введених чисел дорівнює ${
 
 /* Напишіть функцію, яка приймає об'єкт і рахує загальну суму зарплат працівників. */
 
-const someObj = {
+/* const someObj = {
   worker1: 360,
   worker2: 750,
   worker3: 240,
@@ -158,4 +158,33 @@ const totalSum = (obj) => {
    }, 0);
 }
 
-console.log(totalSum(someObj));
+console.log(totalSum(someObj)); */
+
+/*? ------------------- Task-02-03 ------------------ */
+/**
+ *? Напишіть ф-цію calcTotalPrice(someStones, stonesName),
+ *? яка приймає масив об'єктів та
+ *? рядок під назвою каменю.
+ *? Функція рахує та повертає загальну вартість каменів
+ *? з таким ім'ям, ціною та кількістю з об'єкта
+ */
+
+/*  const stones = [
+    { name: "Изумруд", price: 1300, quantity: 4 },
+    { name: "Бриллиант", price: 2700, quantity: 6 },
+    { name: "Сапфир", price: 400, quantity: 7 },
+    { name: "Щебень", price: 150, quantity: 100 },
+  ];
+  function calcTotalPrice(someStones, stonesName) {
+    const myObject = someStones.find(({name})=>name === stonesName);
+    if (!myObject) {
+        return "Object is not found";
+    }
+    return myObject.price * myObject.quantity;
+  }
+
+  console.log(calcTotalPrice(stones, "Изумруд"))
+  console.log(calcTotalPrice(stones, "Сапфир"))
+  console.log(calcTotalPrice(stones, "цеглина")) */
+
+  /*? ------------------- Task-02-04 ------------------ */
