@@ -243,30 +243,68 @@ console.log(totalSum(someObj)); */
 //TODO:=============================================
 
 /**
-*? Напиши функцію конструктор User для 
-*? створення користувача з такими властивостями:
-*? a. userName - ім'я, рядок
-*? b. age - вік, число
-*? c. numbersOfPost - кількість постів, число
-*? d. функція очікує 1 параметр - об'єкт налаштувань з однойменними властивостями
-*? Додай метод getInfo(), який повертає рядок:
-*? `Користувачеві ${ім'я} ${вік} років і в нього ${кількістьПублікацій} публікацій.`
+ *? Напиши функцію конструктор User для
+ *? створення користувача з такими властивостями:
+ *? a. userName - ім'я, рядок
+ *? b. age - вік, число
+ *? c. numbersOfPost - кількість постів, число
+ *? d. функція очікує 1 параметр - об'єкт налаштувань з однойменними властивостями
+ *? Додай метод getInfo(), який повертає рядок:
+ *? `Користувачеві ${ім'я} ${вік} років і в нього ${кількістьПублікацій} публікацій.`
  */
 
-const User = function ({userName,age,numbersOfPost}) {
-  this.userName = userName;
-  this.age = age;
-  this.numbersOfPost = numbersOfPost;
+// const User = function ({userName,age,numbersOfPost}) {
+//   this.userName = userName;
+//   this.age = age;
+//   this.numbersOfPost = numbersOfPost;
 
-  this.getInfo = function(){
-    console.log(`Користувачеві ${this.userName} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`)
-  }
-}
+//   this.getInfo = function(){
+//     console.log(`Користувачеві ${this.userName} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`)
+//   }
+// }
 
-const user = new User({
-  userName: 'Michael',
-  age: 35,
-  numbersOfPost: 4578
-})
+// const user = new User({
+//   userName: 'Michael',
+//   age: 35,
+//   numbersOfPost: 4578
+// })
 
-console.log(user);
+// console.log(user);
+
+// ?------------------- Task-03-02 ----------------------
+/**
+ *? Напиши клас Client який створює об'єкт
+ *? з ​​властивостями login email
+ *? Оголоси приватні властивості #login #email,
+ *? доступ до яких зроби через геттер та сеттер login email
+ *
+ */
+// class Client {
+//   #login;
+//   #email;
+
+//   constructor({ login, email }) {
+//     this.#login = login;
+//     this.#email = email;
+//   }
+//   get email() {
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+//   get login() {
+//     return this.#login;
+//   }
+//   set login(newLogin) {
+//     this.#login = newLogin;
+//   }
+// }
+
+// const user = new Client({
+//   login: "german",
+//   email: "lskdkjf@gmail.com",
+// });
+
+// user.email = "11111111";
+// console.log(user.email);
