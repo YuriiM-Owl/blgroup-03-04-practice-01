@@ -308,3 +308,81 @@ console.log(totalSum(someObj)); */
 
 // user.email = "11111111";
 // console.log(user.email);
+
+// ?------------------- Task-03-03 ----------------------
+/**
+ *? Напиши клас Notes який управляє колекцією нотаток у
+ *? властивості items.
+ *? Нотатка - це об'єкт із властивостями text і priority.
+ *? Додай класу статичний метод Priopity,
+ *? який буде повертати об'єкт із пріоритетами.
+ *? Додай методи addNote(note), removeNote(text)
+ *? updatePriority(text, newPriority)
+ */
+
+// static Priority() {
+//   return {
+//     HIGHT: "hight",
+//     LOW: "low",
+//   };
+// }
+
+// class Notes {
+//   static Priority() {
+//     return {
+//       HIGHT: "hight",
+//       LOW: "low",
+//     };
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+
+//   removeNote(id) {
+//     const index = this.items.findIndex((item) => item.id === id)
+//     console.log(index)
+//     if (index === -1) {
+//       return;
+//     }
+//     this.items.splice(index, 1);
+//   }
+
+//   updatePriority(id, newPriority) {
+//  const index = this.items.findIndex((item) => item.id === id)
+
+//     if (index === -1) {
+//       return;
+//     }
+
+//     this.items[index].priority = newPriority;
+//   }
+
+// }
+
+// const note = new Notes();
+// // console.log(note);
+// note.addNote({ id: 1, text: "Note1", priority: Notes.Priority().LOW });
+// // console.log(note);
+
+// note.removeNote(10)
+
+// // note.updatePriority(1, 'high')
+// console.log(note)
+
+// ?------------------- HW ----------------------
+/*Напишіть функцію checkBrackets(str) яка приймає рядок жс коду (someFn)
+  і перевіряє правильність закриття дужок () {} []
+  Якщо рядок містить коректний код функція повертає true.
+  В іншому випадку повертає false
+*/
+
+// const someFn = `function foo() {
+//   const arr = [1, 2, 3];
+//   console.log(arr);
+// }`;
+
+// console.log(checkBrackets(someFn));
