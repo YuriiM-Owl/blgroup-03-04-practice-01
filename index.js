@@ -240,3 +240,33 @@ console.log(totalSum(someObj)); */
 // console.log(getObject(tweets));
 
 // ?------------------- Task-03-01 ----------------------
+//TODO:=============================================
+
+/**
+*? Напиши функцію конструктор User для 
+*? створення користувача з такими властивостями:
+*? a. userName - ім'я, рядок
+*? b. age - вік, число
+*? c. numbersOfPost - кількість постів, число
+*? d. функція очікує 1 параметр - об'єкт налаштувань з однойменними властивостями
+*? Додай метод getInfo(), який повертає рядок:
+*? `Користувачеві ${ім'я} ${вік} років і в нього ${кількістьПублікацій} публікацій.`
+ */
+
+const User = function ({userName,age,numbersOfPost}) {
+  this.userName = userName;
+  this.age = age;
+  this.numbersOfPost = numbersOfPost;
+
+  this.getInfo = function(){
+    console.log(`Користувачеві ${this.userName} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`)
+  }
+}
+
+const user = new User({
+  userName: 'Michael',
+  age: 35,
+  numbersOfPost: 4578
+})
+
+console.log(user);
