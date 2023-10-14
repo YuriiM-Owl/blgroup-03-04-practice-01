@@ -4,14 +4,14 @@
 Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
 */
 
-const showMeBtnEl = document.querySelector("#alertButton");
-const inputFieldEl = document.querySelector("#alertInput");
+// const showMeBtnEl = document.querySelector("#alertButton");
+// const inputFieldEl = document.querySelector("#alertInput");
 
-showMeBtnEl.addEventListener("click", getInputValue);
+// showMeBtnEl.addEventListener("click", getInputValue);
 
-function getInputValue() {
-  console.log(inputFieldEl.value);
-}
+// function getInputValue() {
+//   console.log(inputFieldEl.value);
+// }
 
 //TODO:==============================================
 /*
@@ -20,6 +20,18 @@ function getInputValue() {
 Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
 */
 
+const swapMeEl = document.querySelector("#swapButton");
+const leftSwapInputEl = document.querySelector("#leftSwapInput");
+const rightSwapInput = document.querySelector("#rightSwapInput");
+
+swapMeEl.addEventListener("click", getInputReverse);
+
+function getInputReverse() {
+  const left = leftSwapInputEl.value;
+  const right = rightSwapInput.value;
+  leftSwapInputEl.value = right;
+  rightSwapInput.value = left;
+}
 //TODO:==============================================
 /*
 Завдання 3
