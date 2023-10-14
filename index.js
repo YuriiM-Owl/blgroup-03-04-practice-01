@@ -39,12 +39,42 @@ function getInputReverse() {
 "Розкрити", при повторному натисканні текст знову стає доступним
 і кнопка набуває початкового вигляду.
 */
+const inputEl = document.querySelector("#passwordInput");
+const butonEl = document.querySelector("#passwordButton");
+butonEl.addEventListener("click", hideValue);
+
+function hideValue() {
+  if (inputEl.type === "password") {
+    inputEl.type = "text";
+    butonEl.textContent = "Приховати";
+    return;
+  }
+
+  inputEl.type = "password";
+  butonEl.textContent = "Розкрити";
+}
 
 //TODO:==============================================
 /*
 Завдання 4
 Кнопка "Зменшити" робить квадрат менше на 10 пікселів,  "Збільшити" - більше на 10 пікселів.
 */
+const boxEl = document.querySelector("#box");
+const squareSizeEl = document.querySelector("#js-event");
+
+squareSizeEl.addEventListener("click", changeSize);
+
+function changeSize(event) {
+  const widthSquare = parseInt(getComputedStyle(boxEl).width);
+  if (event.target.textContent === "Уменьшить") {
+    boxEl.style.width = `${widthSquare - 10}px`;
+    boxEl.style.height = `${widthSquare - 10}px`;
+  }
+  if (event.target.textContent === "Увеличить") {
+    boxEl.style.width = `${widthSquare + 10}px`;
+    boxEl.style.height = `${widthSquare + 10}px`;
+  }
+}
 
 //TODO:==============================================
 /*
